@@ -1,6 +1,6 @@
 package Controller;
 
-import Entity.User;
+import Po.User;
 import Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +17,7 @@ public class Register {
 
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)
     public void register(@RequestBody User user) {
+
         userService.addUser(user);
         System.out.println(user);
     }

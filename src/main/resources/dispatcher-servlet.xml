@@ -9,6 +9,7 @@
 
 
     <mvc:annotation-driven>
+        <!--         前后端分离配置 :转换json -->
         <mvc:message-converters register-defaults="true">
             <bean id="fastJsonHttpMessageConverter"
                   class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">

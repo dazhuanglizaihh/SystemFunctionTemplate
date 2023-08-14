@@ -1,6 +1,7 @@
 package Service;
 
-import Entity.User;
+
+import Po.User;
 
 public interface UserService {
     public int addUser(User user);
