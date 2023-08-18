@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 @RestController()
 @RequestMapping("/register")
 public class Register {
@@ -17,8 +19,12 @@ public class Register {
 
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)
     public void register(@RequestBody User user) {
-        userService.addUser(user);
-        System.out.println(user);
+
+    }
+
+    @RequestMapping(value = "/test")
+    public void test() {
+        System.out.println(new Date());
     }
 
 }

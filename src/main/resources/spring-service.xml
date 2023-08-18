@@ -7,7 +7,7 @@
 
 
     <bean id="userService" class="Service.Impl.UserServiceImpl">
-
+        <property name="userMapper" ref="userMapper"/>
     </bean>
 
 <!--    <bean id="configCheckBean" class="Log.ConfigCheckBean" init-method="checkConfig">-->

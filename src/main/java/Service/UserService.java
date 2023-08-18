@@ -2,6 +2,8 @@ package Service;
 
 import Entity.User;
 
-public interface UserService {
+import java.util.List;
 
+public interface UserService {
+    List<User> queryAllUser();
 }
